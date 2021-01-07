@@ -1,0 +1,6 @@
+$nomention
+$dm[]
+$deletecommand
+$tite[Tiltva]
+$ban
+$color[00ff00]
