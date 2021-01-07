@@ -1,0 +1,2 @@
+# bdfd
+bdfd kódok magyarul 
