@@ -1,6 +1,21 @@
-$nomention
-$dm[]
-$deletecommand
-$tite[Tiltva]
+(Perfix)ban <@felhasználó>
+
+$nomention 
+$​onlyPerms[ban;kick;** <@$​authorID>, Te nem tilthatod a felhasználót! :(**]
+$argsCheck[>1;Érvénytelen használat! A megfelelö használat `(perfix)ban <@felhasználó> <indok>`.]
+$​onlyIf[$​authorID!=$​mentioned[<];**Magadat nem tilthatód**.] 
+$​thumbnail[$​serverIcon]
+$title[Tiltva..]
+$color[20fdef]
+$description[
+**Végrehajtója:** <@$​authorID> 
+**Discord ID:** $authorID 
+
+**Tiltott felhasználó:** <@$​mentioned[1]>]
+**Discord ID:** $​mentioned[1]
+]
+$​footer[Indok: $​noMentionMessage]
+$​footerIcon[$​serverIcon]
 $ban
-$color[00ff00]
+$embedSuppressErrors[‼️ Hiba:;Kitilt egy tagot a szeveröl. 
+**A parancs hibás felhasználása.**; ff4d4d; ;Tiltás parancs.; ]
