@@ -1,0 +1,9 @@
+$nomention
+$argsCheck[>1;Használja a helyes parancsot. `(perefix)github <felhasználó>]`
+$color[$randomText[1;9999]]
+$author[Keresés a githubon]
+$authorIcon[https://cdn.discordapp.com/attachments/747439327830605946/747439345518116874/github.png]
+$description[[Github eredmeny](https://github.com/search?q=$message[1])
+**Keresett kifejezés: $message
+Kereste: $username[$mentioned[1;yes]]#$discriminator[$mentioned[1;yes]]**]
+$footer[$username]
