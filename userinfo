@@ -1,0 +1,36 @@
+$onlyIf[$getServerVar[Bot]==on;]
+$nomention
+$argsCheck[1;Nem jól használod vazzeg! Így e: ``$getServerVar[előtag]userinfo <@felhasználó>``] 
+$thumbnail[$userAvatar[$mentioned[1;yes]]]
+$title[$username[$mentioned[1;yes]]#$discriminator[$mentioned[1;yes]]]
+$color[$getUserVar[helpszin]]
+
+$userInfo[
+**Említett név**: | <@$mentioned[1;yes]>
+
+**Felhasználó név**: | $username[$mentioned[1;yes]]#$discriminator[]
+
+**Becenév:** | {username}
+
+**Fiók létrehozása:** | $creationDate[$authorID]
+
+`📧` | {email}
+
+**Elemörzött:** | {verified}
+
+**DM Engedélyezve?**: | $isUserDMEnabled[$mentioned[1;yes]]
+
+**Adminisztrátor**: | $isAdmin[$mentioned[1;yes]]
+
+**ID** : `$mentioned[1;yes]`
+
+**Bot vagy?**: | $isBot[$mentioned[1;yes]]
+
+**Rangok**:  | `$userRoles[$mentioned[1;yes]]`
+]
+$image[https://cdn.discordapp.com/attachments/568156544886112287/596635928806686720/Tw-1.gif]
+
+$addTimestamp
+$footer[Userinfo $username]
+$footerIcon[$authorAvatar]
+$suppressErrors
